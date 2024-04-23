@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
-ROOT_URLCONF = 'myapp.urls'
+ROOT_URLCONF = 'april_hackathon.urls'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -92,7 +92,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myapp.wsgi.application'
+WSGI_APPLICATION = 'april_hackathon.wsgi.application'
 
 
 # Database
