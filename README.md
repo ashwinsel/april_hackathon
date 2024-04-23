@@ -1,35 +1,44 @@
-# Welcome to Stephen's Django Starter template
+# Women's Health April Hybrid Hackathon 
 
-This template assumes you are creating a Django project that uses a PostgreSQL database in production and a SQLite database in development. It also includes a basic user authentication system and Cloudinary for image uploads.
+## Introduction
 
-If this is your first time using the template (before the initial commit), you may want to update the project's name. By searching for `myapp` and replacing it with your project's name. In this template's case, it is found in:
+Problem statement:
+- As a woman, I find that many aspects of my health, especially sensitive or less-discussed topics, are often overlooked or not openly addressed. This leaves me feeling uninformed and unsupported when facing health challenges that are specific to women. I want a safe, welcoming space where I can find reliable information, connect with others experiencing similar issues, and engage in meaningful discussions about women's health.
 
-1. `manage.py`
-2. `myapp/asgi.py`
-3. `myapp/settings.py`
-4. `myapp/urls.py`
-5. `myapp/wsgi.py`
-6. The folder named `myapp` in the root directory
+ConnectHer is designed to provide an environment where women can share experiences and find information on little discussed female health issues.
+Each forum will contain a link to appropriate medical information as well as giving women the opportunity to share anecdotes, personal experiences and advice.
 
-To get started, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for instructions on how to set up the project on your local machine.
+## Judging Criteria
+1. The project demonstrates an impact on women's health
 
-## Features
 
-Description of the features of the project.
+2. The project is realistic and has real world value
 
-## Deployment to Heroku
 
-For Heroku deployment, you will need the following environment variables:
+3. The project has excellent design and layout 
 
-```
-DATABASE_URL = <your-production-database-url>
-SECRET_KEY = <your-secret-key>
-CLOUDINARY_URL = <your-production-cloudinary-url>
-ALLOWED_HOSTS = <your-deployed-app-url>
-CSRF_TRUSTED_ORIGINS = <your-deployed-app-url>
-DEBUG_MODE = False // Set to False in production, but can be True for debugging
 
-# Optional
-DISABLE_COLLECTSTATIC = 1 // Set to 1 to disable collectstatic (don't make Cloudinary store all your CSS, JS and Image files)
+4. The project is presented to the judges in a professional manner
 
-```
+
+5. The project demonstrates innovation and creativity
+
+
+## Design (include wireframe)
+
+
+## Tech used
+- HTML
+- CSS
+- Django
+
+## Credits
+
+
+## The Team
+- Kyle Clow (Scrum master) LinkedIn: GitHub:
+- Stephanie LinkedIn: GitHub:
+- Stefan LinkedIn: GitHub:
+- Ash LinkedIn: GitHub:
+- Emma Lamont LinkedIn: GitHub:
+- ib LinkedIn: GitHub:
