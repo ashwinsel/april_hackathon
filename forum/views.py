@@ -8,8 +8,8 @@ def category_list(request):
 
 def category_detail(request, category_id):
     category = get_object_or_404(Category, pk=category_id)
-    threads = Thread.objects.filter(category=category)
-    return render(request, 'forum/category_detail.html', {'category': category, 'threads': threads})
+    threads = category.thread_set.all()
+    return render(request, 'forum/category_detail.html', {'category': category, 'threads': threads, 'category_id': category_id})
 
 def thread_detail(request, category_id, thread_id):
     thread = get_object_or_404(Thread, pk=thread_id)
@@ -25,10 +25,10 @@ def create_thread(request, category_id):
             thread.category = category
             thread.created_by = request.user
             thread.save()
-            return redirect('forum/thread_detail', category_id=category_id, thread_id=thread.id)
+            return redirect('category_detail', category_id=category_id, thread_id=thread.id)
     else:
         form = ThreadForm()
-    return render(request, 'forum/create_thread.html', {'form': form, 'category': category})
+    return render(request, 'category_detail', {'form': form, 'category': category})
     
 def create_post(request, category_id, thread_id):
     thread = get_object_or_404(Thread, pk=thread_id)
@@ -39,10 +39,10 @@ def create_post(request, category_id, thread_id):
             post.thread = thread
             post.created_by = request.user
             post.save()
-            return redirect('thread_detail', category_id=category_id, thread_id=thread_id)  # Corrected redirect URL name
+            return redirect('thread_detail', category_id=category_id, thread_id=thread_id)
     else:
         form = PostForm()
-    return render(request, 'forum/create_post.html', {'form': form, 'thread': thread})
+    return render(request, 'thread_detail', {'form': form, 'thread': thread})
 
 def like_post(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
