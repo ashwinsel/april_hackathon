@@ -29,7 +29,7 @@ def create_thread(request, category_id):
     else:
         form = ThreadForm()
     return render(request, 'forum/create_thread.html', {'form': form, 'category': category})
-
+    
 def create_post(request, category_id, thread_id):
     thread = get_object_or_404(Thread, pk=thread_id)
     if request.method == 'POST':
@@ -39,7 +39,7 @@ def create_post(request, category_id, thread_id):
             post.thread = thread
             post.created_by = request.user
             post.save()
-            return redirect('forum/thread_detail', category_id=category_id, thread_id=thread_id)
+            return redirect('thread_detail', category_id=category_id, thread_id=thread_id)  # Corrected redirect URL name
     else:
         form = PostForm()
     return render(request, 'forum/create_post.html', {'form': form, 'thread': thread})

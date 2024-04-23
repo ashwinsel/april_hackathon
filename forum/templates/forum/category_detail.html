@@ -3,6 +3,25 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-<h1>Catagory Detail</h1>
+<h1>{{ category.name }} Detail</h1>
+
+{% if category.id == 1 %}
+    <p> Endometriosis page </p>
+
+    {% for thread in threads %}
+    <a href="{% url 'thread_detail' category_id=thread.category.id thread_id=thread.id %}">
+        <h2>{{ thread.title }}</h2>
+    </a>
+        {{ thread.content }}
+        
+    {% endfor %}
+{% endif %}
+
+
+
+{% if category.id == 2 %}
+    <p> Menopause page</p>
+{% endif %}
+
 <p>Welcome!</p>
 {% endblock %}

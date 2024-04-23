@@ -5,4 +5,12 @@
 {% block content %}
 <h1>Catagory List</h1>
 <p>Welcome!</p>
+
+{% for category in categories %}
+    <p>
+        <a href="{% url 'category_detail' category_id=category.id %}">
+        {{ category.name }}
+        </a>
+    </p>
+{% endfor %}
 {% endblock %}

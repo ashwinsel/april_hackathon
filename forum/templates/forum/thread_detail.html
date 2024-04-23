@@ -5,4 +5,21 @@
 {% block content %}
 <h1>Thread Detail</h1>
 <p>Welcome!</p>
+<div>
+    <h2>{{ thread.title }}</h2>
+    <div>{{ thread.content }}</div>
+
+    <form method="post" action="{% url 'create_post' category_id=thread.category.id thread_id=thread.id %}">
+
+        {% csrf_token %}
+        <textarea name="content" placeholder="Enter your reply"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% for post in posts %}
+    <div>{{ post.content }}</div>
+    <div> {{ post.created_by }}</div>
+    <div> {{ post.created_at }}</div>
+    {% endfor %}
 {% endblock %}
