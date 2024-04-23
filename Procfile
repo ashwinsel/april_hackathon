@@ -1,1 +1,1 @@
-web: gunicorn APRIL_HACKATHON.wsgi
+web: gunicorn april_hackathon.wsgi
