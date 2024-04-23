@@ -21,10 +21,11 @@
   {% endblock %}
 
   {% block core_js %}
-  {% endblock core_js %}
-  <title>{% block extra_title %}{% endblock %}</title>
-  {% comment %} Font Awesome Kit {% comment %}
   <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
+  {% endblock %}
+
+  <title>{% block extra_title %}{% endblock %}</title>
+
 </head>
 
 {% comment %} Body {% endcomment %}
@@ -81,15 +82,15 @@
         <ul id="socialmedia-icons">
           <li><a href="https://www.facebook.com/" target="_blank"
               aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
-                class="fa-brands fa-square-facebook"></i></a></li>
+                class="fa-brands fa-facebook-f"></i></a></li>
           <li><a href="https://www.twitter.com/" target="_blank" aria-label="Visit our Twitter page (opens in new tab)"
-              rel="noopener"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+              rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
           <li><a href="https://www.instagram.com/" target="_blank"
               aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
                 class="fa-brands fa-square-instagram"></i></a></li>
         </ul>
       </div>
-      <div>
+      <div id="footer-about">
         <h3>About Us</h3>
         <p>Connect Her is an inclusive space for women to express their concerns about their health.</p>
       </div>
