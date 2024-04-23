@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Category, Thread, Post, Like
 from .forms import ThreadForm, PostForm
+from django.contrib.auth.decorators import login_required
 
 def category_list(request):
     categories = Category.objects.all()
@@ -16,6 +17,7 @@ def thread_detail(request, category_id, thread_id):
     posts = Post.objects.filter(thread=thread)
     return render(request, 'forum/thread_detail.html', {'thread': thread, 'posts': posts})
 
+@login_required
 def create_thread(request, category_id):
     category = get_object_or_404(Category, pk=category_id)
     if request.method == 'POST':
@@ -25,11 +27,12 @@ def create_thread(request, category_id):
             thread.category = category
             thread.created_by = request.user
             thread.save()
-            return redirect('category_detail', category_id=category_id, thread_id=thread.id)
+            return redirect('category_detail', category_id=category_id)  # Redirecting to category detail page
     else:
         form = ThreadForm()
-    return render(request, 'category_detail', {'form': form, 'category': category})
-    
+    return render(request, 'forum/create_thread.html', {'form': form, 'category': category})
+
+@login_required   
 def create_post(request, category_id, thread_id):
     thread = get_object_or_404(Thread, pk=thread_id)
     if request.method == 'POST':
@@ -42,7 +45,8 @@ def create_post(request, category_id, thread_id):
             return redirect('thread_detail', category_id=category_id, thread_id=thread_id)
     else:
         form = PostForm()
-    return render(request, 'thread_detail', {'form': form, 'thread': thread})
+    return render(request, 'forum/create_post.html', {'form': form, 'thread': thread})
+
 
 def like_post(request, post_id):
     post = get_object_or_404(Post, pk=post_id)

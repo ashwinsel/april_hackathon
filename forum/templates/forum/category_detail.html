@@ -3,11 +3,10 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-<h1>{{ category.name }} Detail</h1>
+<h1>{{ category.name }}</h1>
+{{ category.description }}
 
 {% if category.id == 1 %}
-    <p> Endometriosis page </p>
-
     {% for thread in threads %}
     <a href="{% url 'thread_detail' category_id=thread.category.id thread_id=thread.id %}">
         <h2>{{ thread.title }}</h2>
@@ -23,12 +22,16 @@
     <p> Menopause page</p>
 {% endif %}
 
-<form method="post" action="{% url 'create_thread' category_id=category.id %}">
-    {% csrf_token %}
-    <input type="text" name="title" placeholder="Thread title"><br>
-    <textarea name="content" placeholder="Thread content"></textarea><br>
-    <button type="submit">Submit</button>
-</form>
+{% if user.is_authenticated %}
+    <form method="post" action="{% url 'create_thread' category_id=category.id %}">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Thread title"><br>
+        <textarea name="content" placeholder="Thread content"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+{% else %}
+    <div> Please login/ Signup to create threads</div>
+{% endif %}
 
 
 {% endblock %}
