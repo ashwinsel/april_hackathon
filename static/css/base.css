@@ -29,7 +29,7 @@ header a {
     letter-spacing: 1px;
 }
 
-#nav-menu > li {
+#nav-menu>li {
     margin-bottom: 5%;
 }
 
@@ -111,5 +111,30 @@ footer div {
 
     #footer-about {
         max-width: 33%;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #nav-menu {
+        display:flex;
+    }
+
+    #nav-menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
     }
 }
