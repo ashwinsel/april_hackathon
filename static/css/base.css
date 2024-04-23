@@ -1,0 +1,55 @@
+/* Footer Styles*/
+footer {
+    text-align: center;
+    padding: 2%;
+    background-color: #F3D0D7;
+}
+
+footer div {
+    padding: 2% 2%;
+}
+
+#socialmedia-icons {
+    display: flex;
+    flex-flow: row-wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1% 10%;
+}
+
+#socialmedia-icons i {
+    color: black;
+}
+
+#socialmedia-icons a {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 180%;
+    margin: 4px 2px;
+    border-radius: 10px;
+}
+
+#socialmedia-icons a:hover {
+    background-color: #F3D0D7;
+    border: 5px solid #ffefef;
+    color: black;
+}
+
+
+
+/* Media query: landscape phones(576px and up)*/
+@media screen and (min-width: 576px) {
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #footer-about {
+        max-width: 33%;
+    }
+}
