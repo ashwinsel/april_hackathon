@@ -128,9 +128,10 @@ footer div {
 
     #nav-menu {
         display:flex;
+
     }
 
-    #nav-menu > li {
+    #nav-menu li {
         padding-left: 1rem;
     }
 
