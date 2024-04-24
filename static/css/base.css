@@ -1,12 +1,24 @@
+/* Main Content */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 /* Footer Styles*/
 footer {
     text-align: center;
     padding: 2%;
     background-color: #F3D0D7;
+    margin-top: auto;
 }
 
 footer div {
     padding: 2% 2%;
+}
+
+#footer-email a {
+    color: black;
+    text-decoration: none;
 }
 
 #socialmedia-icons {
@@ -33,7 +45,14 @@ footer div {
     border-radius: 10px;
 }
 
-#socialmedia-icons a:hover {
+#footer-email a {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#socialmedia-icons a:hover,
+#footer-email a:hover {
     background-color: #F3D0D7;
     border: 5px solid #ffefef;
     color: black;
