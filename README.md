@@ -42,9 +42,9 @@ Each forum will contain a link to appropriate medical information as well as giv
 - Google Fonts
 
 ## The Team
-- Kyle Clow (Scrum master) (LinkedIn)[https://www.linkedin.com/in/kyle-clow/] (GitHub)[https://github.com/KTC96]
-- Stephanie Bell (LinkedIn)[https://www.linkedin.com/in/stephanie-bell-529a362b/] (GitHub)[https://github.com/bpstephanie/]
-- Emma Lamont (LinkedIn)[https://www.linkedin.com/in/emma-lamont] (GitHub)[https://github.com/elamont174]
-- Stefan Ruppe (LinkedIn)[https://www.linkedin.com/in/stefan-ruppe/] (GitHub)[https://github.com/CsClown/]
-- Ash Selvaraj (LinkedIn) [https://www.linkedin.com/in/ashwinkarthik-selvaraj-12882751/] (GitHub)[#] 
+- Stephanie Bell (Front-end) (LinkedIn)[https://www.linkedin.com/in/stephanie-bell-529a362b/] (GitHub)[https://github.com/bpstephanie/]
+- Kyle Clow (Scrum master and back-end) (LinkedIn)[https://www.linkedin.com/in/kyle-clow/] (GitHub)[https://github.com/KTC96]
+- Emma Lamont (Front-end) (LinkedIn)[https://www.linkedin.com/in/emma-lamont] (GitHub)[https://github.com/elamont174]
+- Stefan Ruppe (Front-end) (LinkedIn)[https://www.linkedin.com/in/stefan-ruppe/] (GitHub)[https://github.com/CsClown/]
+- Ash Selvaraj (Front-end) (LinkedIn) [https://www.linkedin.com/in/ashwinkarthik-selvaraj-12882751/] (GitHub)[#] 
 - ib LinkedIn: GitHub:
