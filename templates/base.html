@@ -23,7 +23,9 @@
   {% block core_js %}
   <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
   {% endblock core_js %}
+
   <title>{% block extra_title %}{% endblock %}</title>
+
 </head>
 
 {% comment %} Body {% endcomment %}
@@ -89,7 +91,7 @@
   {% comment %} Main content {% endcomment %}
   <main>
     {% block content %}
-
+    
     {% endblock content %}
   </main>
 
@@ -98,6 +100,7 @@
     <div class="footer-flex">
       <div>
         <h3>Contact Us</h3>
+        <p id="footer-email">Email: <a href="mailto:info@connecther.co.uk">info@connecther.co.uk</a></p>
         <p>Email: info@connecther.co.uk</p>
       </div>
       <div>
@@ -111,7 +114,8 @@
           <li><a href="https://www.instagram.com/" target="_blank"
               aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
                 class="fa-brands fa-square-instagram"></i></a></li>
-        </ul>
+         </ul>
+
       </div>
       <div id="footer-about">
         <h3>About Us</h3>

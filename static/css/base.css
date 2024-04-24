@@ -1,3 +1,18 @@
+
+/* Main Content */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Footer Styles*/
+footer {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    padding: 2%;
+    background-color: #F3D0D7;
+    margin-top: auto;
+=======
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* begin Stefan CSS */
@@ -221,12 +236,25 @@ footer div {
     padding: 2% 2%;
 }
 
+#footer-email a {
+    color: black;
+    text-decoration: none;
+}
+
+#socialmedia-icons {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1% 10% 1% 1%;
+    flex-basis: 1 auto;
+
 #socialmedia-icons {
     display: flex;
     flex-flow: row-wrap;
     list-style-type: none;
     justify-content: space-evenly;
     padding: 1% 10%;
+
 }
 
 #socialmedia-icons i {
@@ -245,12 +273,20 @@ footer div {
     border-radius: 10px;
 }
 
+#footer-email a {
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#socialmedia-icons a:hover,
+#footer-email a:hover {
+
 #socialmedia-icons a:hover {
     background-color: #F3D0D7;
     border: 5px solid #ffefef;
     color: black;
 }
-
 
 
 /* Media query: landscape phones(576px and up)*/
