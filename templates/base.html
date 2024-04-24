@@ -31,12 +31,37 @@
 <body>
   {% comment %} Header {% endcomment %}
   <header>
+    <a href="{% url 'home' %}">
+      <h1 id="logo">NAME</h1>
+    </a>
     <div>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
       <nav>
-        <ul>
+        <ul id="nav-menu">
           <li>
             <a href="{% url 'home' %}" aria-label="Navigates to home page">
               Home
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to explore page">
+              Explore
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to explore page">
+              Learn
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to contact page">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to team page">
+              Team
             </a>
           </li>
           {% if user.is_authenticated %}
@@ -70,31 +95,31 @@
 
   {% comment %} Footer {% endcomment %}
   <footer>
-      <div class="footer-flex">
-        <div>
-          <h3>Contact Us</h3>
-          <p>Email: info@connecther.co.uk</p>
-        </div>
-        <div>
-          <h3>Connect with Us</h3>
-          <ul id="socialmedia-icons">
-            <li><a href="https://www.facebook.com/" target="_blank"
-                aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
-                  class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.twitter.com/" target="_blank" aria-label="Visit our Twitter page (opens in new tab)"
-                rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"
-                aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
-                  class="fa-brands fa-square-instagram"></i></a></li>
-          </ul>
-        </div>
-        <div id="footer-about">
-          <h3>About Us</h3>
-          <p>Connect Her is an inclusive space for women to express their concerns about their health.</p>
-        </div>
+    <div class="footer-flex">
+      <div>
+        <h3>Contact Us</h3>
+        <p>Email: info@connecther.co.uk</p>
       </div>
-      <hr>
-      <p>© {% now 'Y' %} Copyright 2024 ConnectHer. All rights reserved.</p>
+      <div>
+        <h3>Connect with Us</h3>
+        <ul id="socialmedia-icons">
+          <li><a href="https://www.facebook.com/" target="_blank"
+              aria-label="Visit our Facebook page (opens in new tab)" rel="noopener"><i
+                class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com/" target="_blank" aria-label="Visit our Twitter page (opens in new tab)"
+              rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"
+              aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
+                class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div id="footer-about">
+        <h3>About Us</h3>
+        <p>Connect Her is an inclusive space for women to express their concerns about their health.</p>
+      </div>
+    </div>
+    <hr>
+    <p>© {% now 'Y' %} Copyright 2024 ConnectHer. All rights reserved.</p>
   </footer>
 
   <script src="{% static 'js/script.js' %}"></script>
