@@ -25,7 +25,9 @@ Each forum will contain a link to appropriate medical information as well as giv
 
 
 ## Design (include wireframe)
+- Initial brainstorm wireframe
 
+- 
 
 ## Tech used
 - HTML
