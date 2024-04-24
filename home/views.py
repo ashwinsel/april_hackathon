@@ -10,5 +10,15 @@ def contact(request):
 def aboutUs(request):
     return render(request, 'home/about_us.html')
 
+def endometriosis(request):
+    return render(request, 'home/endometriosis.html')
+
+def menopause(request):
+    return render(request, 'home/menopause.html')
+
+def notBeingHeard(request):
+    return render(request, 'home/not_being_heard.html')
+
+
 
 
