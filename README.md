@@ -20,7 +20,7 @@ Each forum will contain a link to appropriate medical information as well as giv
 - Django framework, Bootstrap and CSS were used to create a welcoming and supportive environment which users can easily navigate.
 
 4. The project is presented to the judges in a professional manner
-- The presentation will be given by Emma Lamont and Stefan Ruppe in-person at the Google offices in London. Both have extensive performing and presenting experience through their former careers. 
+- The presentation will be given by Emma Lamont in-person at the Google offices in London. She has extensive performing and presenting experience through her former career. 
 
 
 5. The project demonstrates innovation and creativity
@@ -35,8 +35,10 @@ Each forum will contain a link to appropriate medical information as well as giv
 - 
 
 ## Tech used
+- GitHub
 - HTML
 - CSS
+- BootStrap
 - Django
 
 ## Credits
