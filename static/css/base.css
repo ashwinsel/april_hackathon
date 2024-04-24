@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Main Content */
 body {
@@ -12,8 +13,7 @@ footer {
     padding: 2%;
     background-color: #F3D0D7;
     margin-top: auto;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
 
 /* begin Stefan CSS */
 :root {
@@ -59,6 +59,7 @@ strong {
     background-color: #f0f0f0;
     max-width: 90%;
 }
+
 #hero-shadow {
     display: flex;
     flex-direction: column;
@@ -70,8 +71,7 @@ strong {
 }
 
 .hero-content {
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 .hero-content h1 {
@@ -111,8 +111,6 @@ strong {
     text-align: left;
     margin: 10px;
 }
-
-
 
 h1, h2 {
     color: #333;
@@ -243,13 +241,6 @@ footer div {
 
 #socialmedia-icons {
     display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    padding: 1% 10% 1% 1%;
-    flex-basis: 1 auto;
-
-#socialmedia-icons {
-    display: flex;
     flex-flow: row-wrap;
     list-style-type: none;
     justify-content: space-evenly;
@@ -278,9 +269,6 @@ footer div {
     padding: 10px 20px;
     border-radius: 10px;
 }
-
-#socialmedia-icons a:hover,
-#footer-email a:hover {
 
 #socialmedia-icons a:hover {
     background-color: #F3D0D7;
