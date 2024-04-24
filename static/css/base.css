@@ -1,3 +1,4 @@
+
 /* Main Content */
 body {
     min-height: 100vh;
@@ -11,6 +12,224 @@ footer {
     padding: 2%;
     background-color: #F3D0D7;
     margin-top: auto;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* begin Stefan CSS */
+:root {
+    --primary-color: #F3D0D7;
+    --secondary-color: #FFEFEF;
+    --tertiary-color: #F0EBE3;
+    --quaternary-color: #F6F5F2;
+}
+* {
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;  
+}
+html {
+    background-color: var(--secondary-color);
+    border-radius: 0px;
+}
+
+main { 
+    background-color: var(--secondary-color);
+    background: url('../assets/images/mainBG.jpg') no-repeat center center/cover;
+    margin-top: 55px;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+strong {
+    font-weight: 400;
+
+}
+#hero {
+    margin-top: 30px;
+    height: 250px;
+    background: url('../assets/images/3women-1phone.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+    background-color: #f0f0f0;
+    max-width: 90%;
+}
+#hero-shadow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0,0,0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.hero-content {
+    padding: 20px;
+    
+}
+
+.hero-content h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.3rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.hero-content p {
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    
+}
+
+.cta-button {
+    display: inline-block;
+    letter-spacing: 0rem;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#articles {
+    width: 90vw;
+    padding: 40px;
+}
+
+.article {
+    background-color: var(--tertiary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 10px;
+}
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+@media screen and (min-width: 768px) {
+
+    #hero {
+        
+        height: 400px;
+        width: 1000px;
+        max-width: 80%;
+    }
+
+    .hero-content h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.6rem;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.hero-content p {
+    
+    font-size: 1.2em;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    #articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* end Stefan CSS */
+
+
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #F3D0D7;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 0;
+    /* stefan edit */
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-menu {
+    font-size: 120%;
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+
+#nav-menu>li {
+    margin-bottom: 5%;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #F3D0D7;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav Toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 150%;
+}
+
+/* Footer Styles*/
+footer {
+    text-align: center;
+    padding: 2%;
+    background-color: #F3D0D7;
+    border-radius: 0px;
 }
 
 footer div {
@@ -28,6 +247,14 @@ footer div {
     justify-content: space-evenly;
     padding: 1% 10% 1% 1%;
     flex-basis: 1 auto;
+
+#socialmedia-icons {
+    display: flex;
+    flex-flow: row-wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1% 10%;
+
 }
 
 #socialmedia-icons i {
@@ -54,11 +281,12 @@ footer div {
 
 #socialmedia-icons a:hover,
 #footer-email a:hover {
+
+#socialmedia-icons a:hover {
     background-color: #F3D0D7;
     border: 5px solid #ffefef;
     color: black;
 }
-
 
 
 /* Media query: landscape phones(576px and up)*/
@@ -71,5 +299,71 @@ footer div {
 
     #footer-about {
         max-width: 33%;
+    }
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #nav-menu {
+        display:flex;
+
+    }
+
+    #nav-menu li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
+
+/*CONTACT PAGE*/
+#contactus {
+    display: flex;
+    top: 0;
+    margin-left: 8%;
+}
+
+.contactbox {
+    width: 1500px;
+    max-width: 80vw;
+    min-height: 40px;
+    margin: 3.5px;
+}
+
+label.contactlabel {
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+}
+
+button#contactbox-submit {
+    /*background-color: ; 
+    color: ;
+    font-family: ; */
+    margin: 10px;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+textarea{
+    resize: none;
+}
+
+/* Media query: large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #nav-menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }

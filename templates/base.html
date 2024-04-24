@@ -22,7 +22,7 @@
 
   {% block core_js %}
   <script src="https://kit.fontawesome.com/6bd427a7f6.js" crossorigin="anonymous"></script>
-  {% endblock %}
+  {% endblock core_js %}
 
   <title>{% block extra_title %}{% endblock %}</title>
 
@@ -33,12 +33,37 @@
 <body>
   {% comment %} Header {% endcomment %}
   <header>
+    <a href="{% url 'home' %}">
+      <h1 id="logo">NAME</h1>
+    </a>
     <div>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
       <nav>
-        <ul>
+        <ul id="nav-menu">
           <li>
             <a href="{% url 'home' %}" aria-label="Navigates to home page">
               Home
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to explore page">
+              Explore
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to explore page">
+              Learn
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to contact page">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'home' %}" aria-label="Navigates to team page">
+              Team
             </a>
           </li>
           {% if user.is_authenticated %}
@@ -66,7 +91,7 @@
   {% comment %} Main content {% endcomment %}
   <main>
     {% block content %}
-    <h2>MAIN CONTENT- will delete</h2>
+    
     {% endblock content %}
   </main>
 
@@ -76,6 +101,7 @@
       <div>
         <h3>Contact Us</h3>
         <p id="footer-email">Email: <a href="mailto:info@connecther.co.uk">info@connecther.co.uk</a></p>
+        <p>Email: info@connecther.co.uk</p>
       </div>
       <div>
         <h3>Connect with Us</h3>
@@ -88,7 +114,8 @@
           <li><a href="https://www.instagram.com/" target="_blank"
               aria-label="Visit our Instagram page (opens in new tab)" rel="noopener"><i
                 class="fa-brands fa-square-instagram"></i></a></li>
-          </ul>
+         </ul>
+
       </div>
       <div id="footer-about">
         <h3>About Us</h3>
