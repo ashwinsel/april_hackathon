@@ -10,6 +10,9 @@ def contact(request):
 def aboutUs(request):
     return render(request, 'home/about_us.html')
 
+def learn(request):
+    return render(request, 'home/learn.html')
+
 def endometriosis(request):
     return render(request, 'home/endometriosis.html')
 
