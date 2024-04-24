@@ -1,27 +1,42 @@
 {% extends 'base.html' %}
 
-{% block title %}{% endblock %}
+{% block title %}
+    Thread Detail - {{ thread.title }}
+{% endblock %}
 
 {% block content %}
-<h1>Thread Detail</h1>
-<p>Welcome!</p>
-<div>
-    <h2>{{ thread.title }}</h2>
-    <div>{{ thread.content }}</div>
+<div class="container mt-5">
+    <h1>Thread Detail</h1>
 
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ thread.title }}</h2>
+            <p class="card-text">{{ thread.content }}</p>
+        </div>
+    </div>
+
+    <h2>Replies</h2>
+    {% if posts %}
+        {% for post in posts %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <p class="card-text">{{ post.content }}</p>
+                <p class="card-text">Posted by: {{ post.created_by }} | {{ post.created_at }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No replies yet. Be the first to reply!</p>
+    {% endif %}
+
+    <h2>Add Reply</h2>
     <form method="post" action="{% url 'create_post' category_id=thread.category.id thread_id=thread.id %}">
-
         {% csrf_token %}
-        <textarea name="content" placeholder="Enter your reply"></textarea>
-        <button type="submit">Submit</button>
+        <div class="form-group">
+            <label for="content">Your Reply</label>
+            <textarea class="form-control" id="content" name="content" rows="3" placeholder="Enter your reply"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-
-{% for post in posts %}
-    <div>{{ post.content }}</div>
-    <div> {{ post.created_by }}</div>
-    <div> {{ post.created_at }}</div>
-    {% endfor %}
-
-    
 {% endblock %}
