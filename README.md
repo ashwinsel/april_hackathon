@@ -10,18 +10,23 @@ Each forum will contain a link to appropriate medical information as well as giv
 
 ## Judging Criteria
 1. The project demonstrates an impact on women's health
-
+- ConnectHer is a focused space where women can share experiences with issues that are often stigmatised. The information pages will be built with creditable information and signposts to appropriate services. The website aims to empower women to take control of their health by connecting with other women and making well-informed choices.
 
 2. The project is realistic and has real world value
-
+- Within the scope of the hackathon, the project is achievable and will give users a functioning forum where advice, anecdotes and experiences can be shared. Information pages will also be available for users to learn more about each issue.
+- The scope of the project can extend much wider with a much greater real world value when multiple users engage with the platform. Many more issues that people wish to discuss can be identified and other features could be added such as meet-ups or a buddy system.
 
 3. The project has excellent design and layout 
-
+- Django framework, Bootstrap and CSS were used to create a welcoming and supportive environment which users can easily navigate.
 
 4. The project is presented to the judges in a professional manner
+- The presentation will be given by Emma Lamont and Stefan Ruppe in-person at the Google offices in London. Both have extensive performing and presenting experience through their former careers. 
 
 
 5. The project demonstrates innovation and creativity
+- Lack of open communication and stigma is a barrier to women finding the appropriate support in a health setting. The project addresses a need by opening up dialogue into issues such as endometriosis or the menopause. Real women and access to appropriate medical information together innovates a path which leads women to greater health autonomy. 
+
+## The Future
 
 
 ## Design (include wireframe)
@@ -35,12 +40,17 @@ Each forum will contain a link to appropriate medical information as well as giv
 - Django
 
 ## Credits
+- GitHub
+- Google Fonts
 
+### Information page references
+- (Endometriosis)[https://swhr.org/resources/endometriosis-toolkit-a-patient-empowerment-guide/?gad_source=1] 
+- (Menopause)[https://www.who.int/news-room/fact-sheets/detail/menopause]
 
 ## The Team
-- Kyle Clow (Scrum master) LinkedIn: GitHub:
-- Stephanie LinkedIn: GitHub:
-- Stefan LinkedIn: GitHub:
-- Ash LinkedIn: GitHub:
-- Emma Lamont LinkedIn: GitHub:
+- Stephanie Bell (Front-end) (LinkedIn)[https://www.linkedin.com/in/stephanie-bell-529a362b/] (GitHub)[https://github.com/bpstephanie/]
+- Kyle Clow (Scrum master and back-end) (LinkedIn)[https://www.linkedin.com/in/kyle-clow/] (GitHub)[https://github.com/KTC96]
+- Emma Lamont (Front-end) (LinkedIn)[https://www.linkedin.com/in/emma-lamont] (GitHub)[https://github.com/elamont174]
+- Stefan Ruppe (Front-end) (LinkedIn)[https://www.linkedin.com/in/stefan-ruppe/] (GitHub)[https://github.com/CsClown/]
+- Ash Selvaraj (Front-end) (LinkedIn) [https://www.linkedin.com/in/ashwinkarthik-selvaraj-12882751/] (GitHub)[https://github.com/ashwinsel] 
 - ib LinkedIn: GitHub:

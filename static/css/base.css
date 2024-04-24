@@ -292,6 +292,39 @@ footer div {
     }
 }
 
+/*CONTACT PAGE*/
+#contactus {
+    display: flex;
+    top: 0;
+    margin-left: 8%;
+}
+
+.contactbox {
+    width: 1500px;
+    max-width: 80vw;
+    min-height: 40px;
+    margin: 3.5px;
+}
+
+label.contactlabel {
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+}
+
+button#contactbox-submit {
+    /*background-color: ; 
+    color: ;
+    font-family: ; */
+    margin: 10px;
+    font-weight: 300;
+    font-size: 120%;
+}
+
+textarea{
+    resize: none;
+}
+
 /* Media query: large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #nav-menu a:hover {
