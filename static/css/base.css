@@ -23,13 +23,13 @@ header a {
     color: inherit;
 }
 
-#nav-menu {
+#nav-menu2 {
     font-size: 120%;
     list-style-type: none;
     letter-spacing: 1px;
 }
 
-#nav-menu>li {
+#nav-menu2>li {
     margin-bottom: 5%;
 }
 
@@ -126,12 +126,12 @@ footer div {
         padding-right: 1rem;
     }
 
-    #nav-menu {
+    #nav-menu2 {
         display:flex;
 
     }
 
-    #nav-menu li {
+    #nav-menu2 li {
         padding-left: 1rem;
     }
 
@@ -142,7 +142,7 @@ footer div {
 
 /* Media query: large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #nav-menu a:hover {
+    #nav-menu2 a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
