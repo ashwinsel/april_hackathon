@@ -41,10 +41,14 @@ Each forum will contain a link to appropriate medical information as well as giv
 - GitHub
 - Google Fonts
 
+### Information page references
+- (Endometriosis)[https://swhr.org/resources/endometriosis-toolkit-a-patient-empowerment-guide/?gad_source=1] 
+- (Menopause)[https://www.who.int/news-room/fact-sheets/detail/menopause]
+
 ## The Team
 - Stephanie Bell (Front-end) (LinkedIn)[https://www.linkedin.com/in/stephanie-bell-529a362b/] (GitHub)[https://github.com/bpstephanie/]
 - Kyle Clow (Scrum master and back-end) (LinkedIn)[https://www.linkedin.com/in/kyle-clow/] (GitHub)[https://github.com/KTC96]
 - Emma Lamont (Front-end) (LinkedIn)[https://www.linkedin.com/in/emma-lamont] (GitHub)[https://github.com/elamont174]
 - Stefan Ruppe (Front-end) (LinkedIn)[https://www.linkedin.com/in/stefan-ruppe/] (GitHub)[https://github.com/CsClown/]
-- Ash Selvaraj (Front-end) (LinkedIn) [https://www.linkedin.com/in/ashwinkarthik-selvaraj-12882751/] (GitHub)[#] 
+- Ash Selvaraj (Front-end) (LinkedIn) [https://www.linkedin.com/in/ashwinkarthik-selvaraj-12882751/] (GitHub)[https://github.com/ashwinsel] 
 - ib LinkedIn: GitHub:
