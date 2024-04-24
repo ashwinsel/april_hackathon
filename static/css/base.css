@@ -24,10 +24,10 @@ footer div {
 
 #socialmedia-icons {
     display: flex;
-    flex-flow: row-wrap;
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 1% 10%;
+    padding: 1% 10% 1% 1%;
+    flex-basis: 1 auto;
 }
 
 #socialmedia-icons i {
