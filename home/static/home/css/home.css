@@ -41,7 +41,7 @@ main {
     padding: 20px;
     text-align: center;
     font-size: 150%;
-    color:#fff;
+    color: rgb(243, 208, 215);
     font-family: arial;
     position:relative;
     border-radius: 10px;
@@ -69,7 +69,7 @@ main {
     padding: 20px;
     text-align: center;
     font-size:150%;
-    color:#fff;
+    color:rgb(243, 208, 215);
     font-family: arial;
     position:relative; 
     border-radius: 10px;
