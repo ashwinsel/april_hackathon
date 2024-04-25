@@ -27,19 +27,25 @@ header {
     justify-content: space-between;
     align-items: baseline;
     border-radius: 0;
+    letter-spacing: 0.1rem;
     /* stefan edit */
     top: 0;
 }
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #333;
 }
 
 #nav-menu2 {
     font-size: 120%;
     list-style-type: none;
     letter-spacing: 1px;
+}
+
+#nav-menu2 a {
+    text-decoration: none;
+    color:#333
 }
 
 /* Navbar styles with dropdown toggle */
@@ -241,14 +247,14 @@ h2 {
 footer {
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
-    padding: 2%;
+    /*padding: 2%;*/
     background-color: #F3D0D7;
     border-radius: 0px;
     margin-top: auto;
 }
 
 footer div {
-    padding: 2% 2%;
+    padding-top: 2%;
 }
 
 #socialmedia-icons {
