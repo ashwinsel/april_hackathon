@@ -29,10 +29,9 @@ Each forum will contain a link to appropriate medical information as well as giv
 ## The Future
 
 
-## Design (include wireframe)
-- Initial brainstorm wireframe
-
-- 
+## Design 
+- Wireframes:
+![Wireframe](static/assets/images/whealth-wireframe.png) ![Wireframe](static/assets/images/whealth-wireframe2.png)
 
 ## Tech used
 - GitHub
