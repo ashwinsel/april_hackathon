@@ -143,6 +143,10 @@ main {
 
 }
 
+.hero-content a {
+    text-decoration: none;
+}
+
 .cta-button {
     transition-duration: 0.4s;
     background-color: var(--primary-color);
@@ -161,6 +165,9 @@ main {
 .cta-button:hover {
     background-color: rgb(226, 59, 95);
     border: 2px solid var(--primary-color);
+}
+
+.cta-button h2:hover {
     color: white;
 }
 
