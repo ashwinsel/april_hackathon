@@ -5,20 +5,25 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mt-5">
-    <h1>Thread Detail</h1>
+<div class="container mt-3 d-flex justify-content-center flex-column">
+    <div class="d-flex align-items-center justify-content-start">
+        <a href="javascript:history.back()" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i>  Forum threads</a>
+    </div>
+    <h1 class="mb-3">Forum Discussion</h1>
+   
 
-    <div class="card mb-4">
+    <div class="card mb-4 w-100">
         <div class="card-body">
             <h2 class="card-title">{{ thread.title }}</h2>
             <p class="card-text">{{ thread.content }}</p>
+            <p class="card-text">Created by: {{ thread.created_by }} | {{ thread.created_at }}</p>
         </div>
     </div>
 
-    <h2>Replies</h2>
+    <h2 class="d-flex flex-start">Discussion</h2>
     {% if posts %}
         {% for post in posts %}
-        <div class="card mb-3">
+        <div class="card mb-3 w-100">
             <div class="card-body">
                 <p class="card-text">{{ post.content }}</p>
                 <p class="card-text">Posted by: {{ post.created_by }} | {{ post.created_at }}</p>
@@ -26,17 +31,15 @@
         </div>
         {% endfor %}
     {% else %}
-        <p>No replies yet. Be the first to reply!</p>
+        <p class="d-flex flex-start text-black">Nothing here yet! Start the discussion!</p>
     {% endif %}
     {% if user.is_authenticated %}
-        <h2>Add Reply</h2>
         <form method="post" action="{% url 'create_post' category_id=thread.category.id thread_id=thread.id %}">
             {% csrf_token %}
-            <div class="form-group">
-                <label for="content">Your Reply</label>
-                <textarea class="form-control" id="content" name="content" rows="3" placeholder="Enter your reply"></textarea>
+            <div class="form-group w-50">
+                <textarea class="form-control" id="content" name="content" rows="3" placeholder="Share your thoughts"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary d-flex flex-start mb-3">Submit</button>
         </form>
     {% else %}
     <div class="row">
