@@ -318,7 +318,12 @@ footer div {
 /* end Stefan CSS */
 
 
-/*CONTACT PAGE*/
+/*CENTRAL INFO PAGE----------------------------------------------------------------------------*/
+    h5.card-title, a.info-link{
+        color: #DE609F;
+    }
+
+/*CONTACT PAGE----------------------------------------------------------------------------*/
 #contactus {
     display: flex;
     top: 0;
@@ -351,7 +356,7 @@ textarea {
     resize: none;
 }
 
-/*ABOUT US PAGE*/
+/*ABOUT US PAGE----------------------------------------------------------------------------*/
 
 .card {
     width: 90%;
