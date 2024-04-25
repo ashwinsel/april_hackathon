@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://8000-ashwinsel-aprilhackatho-3pv5lazuual.ws-eu110.gitpod.io/'
+    'https://8000-ashwinsel-aprilhackatho-3pv5lazuual.ws-eu110.gitpod.io'
     'april-hackathon-1185eb8a6280.herokuapp.com'
 ]
 
