@@ -109,7 +109,7 @@ main {
 
 .hero-content {
     background-color: rgb(226, 59, 95);
-    bottom: 80px;
+    margin: 40% 10% 5% 10%;
     padding: 40px 10px 20px 10px;
     position: absolute;
 }
@@ -331,48 +331,24 @@ footer div {
         display: none;
     }
 
-    /*Stefan Styles*/
-    /*#hero {
-        height: 400px;
-        width: 1000px;
-        max-width: 80%;
-    }*/
-/*
     .hero-content {
-        width: 60%;
-        height: 40%;
-    }*/
+        margin-bottom: 5%;
+    }
 
     .hero-content h1 {
-        font-size: 2.5em;
-        letter-spacing: 0.6rem;
-        color: var(--primary-color);
+        font-size: 200%;
+        letter-spacing: 0.2rem;
         font-weight: 300;
     }
 
     .hero-content p {
-        font-size: 1.2em;
-        letter-spacing: 0.2rem;
-        color: rgb(255, 255, 255);
-        margin-bottom: 20px;
-
-    }
-
-    .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: var(--primary-color);
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        border-radius: 5px;
+        font-size: 120%;
     }
 
     #articles {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* end Stefan CSS */
 
 
 /*CENTRAL INFO PAGE----------------------------------------------------------------------------*/
