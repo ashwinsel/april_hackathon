@@ -42,10 +42,6 @@ header a {
     letter-spacing: 1px;
 }
 
-#nav-menu2>li {
-    margin-bottom: 5%;
-}
-
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
