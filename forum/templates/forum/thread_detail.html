@@ -28,15 +28,22 @@
     {% else %}
         <p>No replies yet. Be the first to reply!</p>
     {% endif %}
-
-    <h2>Add Reply</h2>
-    <form method="post" action="{% url 'create_post' category_id=thread.category.id thread_id=thread.id %}">
-        {% csrf_token %}
-        <div class="form-group">
-            <label for="content">Your Reply</label>
-            <textarea class="form-control" id="content" name="content" rows="3" placeholder="Enter your reply"></textarea>
+    {% if user.is_authenticated %}
+        <h2>Add Reply</h2>
+        <form method="post" action="{% url 'create_post' category_id=thread.category.id thread_id=thread.id %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="content">Your Reply</label>
+                <textarea class="form-control" id="content" name="content" rows="3" placeholder="Enter your reply"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    {% else %}
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Please <a href="{% url 'account_login' %}">login</a> or <a href="{% url 'account_signup' %}">signup</a> to leave a reply.</p>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}

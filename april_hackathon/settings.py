@@ -27,7 +27,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+ALLOWED_HOSTS = [
+    '8000-ktc96-aprilhackathon-kw6erf17gcf.ws-eu110.gitpod.io',
+    'april-hackathon-1185eb8a6280.herokuapp.com'
+]
 
 CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', '').split(',')
 
