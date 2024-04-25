@@ -96,42 +96,26 @@ main {
 }
 
 #hero {
-    height: 600px;
+    height: 650px;
     width: 100%;
     background: url('../assets/images/3women-1phone.webp') no-repeat center center/cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
     padding: 0px;
     background-color: #f0f0f0;
-    /* max-width: 100%;*/
-}
-
-#hero-shadow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    width: 100%;
 }
 
 .hero-content {
-    /*padding: 20px;*/
     background-color: rgb(226, 59, 95);
-    position: absolute;
-    transform: translate(0%, -45%);
-    bottom: 30px;
-    width: 60%;
-    height: 30%;
-    min-height: 10%;
+    bottom: 80px;
     padding: 40px 10px 20px 10px;
+    position: absolute;
 }
 
 .hero-content h1 {
-    font-size: 1.5em;
+    font-size: 180%;
     letter-spacing: 0.1rem;
     color: var(--primary-color);
     font-weight: 300;
@@ -139,8 +123,7 @@ main {
 }
 
 .hero-content p {
-    font-size: 0.8rem;
-    letter-spacing: 0rem;
+    font-size: 110%;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     text-align: center;
@@ -148,6 +131,12 @@ main {
 
 .hero-content a {
     text-decoration: none;
+}
+
+#cta-dive {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-button {
@@ -161,9 +150,6 @@ main {
     font-size: 40px;
     margin: 10px;
     border-radius: 5px;
-    position: relative;
-    /* position: absolute;*/
-    transform: translate(-5%, 19%);
 }
 
 .cta-button:hover {
@@ -190,7 +176,7 @@ main {
 
 .keyfacts-left-inverted {
     width: 80%;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
     background:  rgb(243, 208, 215);
     padding: 20px;
     text-align: center;
