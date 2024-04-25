@@ -90,6 +90,13 @@ main {
     top: 15px;
 }
 
+/* Contact Confirmation page styling*/
+h1.cc-head {
+    color:rgb(54, 14, 23);
+
+}
+
+
 /* Media query: ipads and tablets (481px and up)*/
 @media screen and (min-width: 481px) {
     .info-page h1 {
