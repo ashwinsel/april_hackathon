@@ -1,7 +1,103 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
 <!--code here :)-->
+<main class="info-page">
+    <h1>Not Feeling Heard</h1>
+    <section>
+        <h2 class="hidden-words">Key Facts</h2>
+        <div class="keyfacts-flex">
+            <div class="keyfacts-left">
+                <p>"23% of females have found it difficult, or very difficult to
+                    access the right medical professional for their healthcare
+                    issue. This rises to 30% for students."</p>
+            </div>
+            <div class="keyfacts-right">
+                <p>"Two fifths (40%) reported having to visit a medical
+                    professionals multiple times before
+                    receiving a correct and appropriate diagnosis for a women's
+                    health issue."</p>
+            </div>
+            <div class="keyfacts-left">
+                <p>"It took on average 3.6 visits to receive a correct diagnosis
+                    but 20% of females had to visit five times or more."</p>
+            </div>
+            <div class="keyfacts-right">
+                <p>"It takes on average 10.84 months to receive a correct diagnosis. However, for 20% of
+                    females it took more than a year and a half."</p>
+            </div>
+            <div class="keyfacts-left">
+                <p>"1 in 5 young women who have sought help for their mental health say they were told they
+                    were being “dramatic"."</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="hidden-words">Overview</h2>
+        <div class="info-divs">
+            <h3>
+                Many women feel they are not being listened to about their health needs - with older women feeling
+                “invisible” to health professionals, and women throughout their lives experiencing a lack of empathy
+                around problems relating to menstruation, fertility, childbirth and menopause.
+            </h3>
+        </div>
+        <div class="info-divs">
+            <h2>Why Is This Happening?</h2>
+            <p>The main challenges in women's health stem from decades, if not centuries, of gender bias and
+                discrimination. In the past, many women's health complaints were attributed to being emotional or
+                hysterical and these gender stereotypes often led to doctors mistreating women's symptoms as a
+                mental health condition, rather than a physical condition.
+            </p>
+            <br>
+            <p>
+                While that has changed, much of this inherent gender bias remains, with many clinical trials and
+                research studies <strong>not assessing the impact on women</strong>. There is a gender-based
+                data gap but now we need to overcome this. Data sets are very rarely analysed by gender, and yet it
+                is almost universally recorded, so the disparities in how genders respond in different disease
+                groups could and should be analysed routinely.
+            </p>
+        </div>
+        <div class="info-divs">
+            <h2>Mental Health and Suicide in Young People</h2>
+            <p>
+                One in five young women who have sought help for their mental health say they were told they were
+                being “dramatic”, according to a new survey.
+            </p>
+            <br>
+            <p>
+                The YouGov survey, which was commissioned by the suicide prevention charity Campaign Against Living
+                Miserably (Calm), asked more than 2,000 women about their experiences when asking for help with a
+                mental health crisis such as panic attacks or manic depression. It found that many women did not
+                feel they were taken seriously.
+            </p>
+            <br>
+            <p>
+                A third said they were asked if they were “overthinking things,” while 20% were asked if they were
+                on their period and 27% were told their issues could be hormonal. The survey found that 22% of the
+                women feared being seen as “attention-seeking”.
+            </p>
+            <br>
+            <p>
+                Among women under 25, the suicide rate is increasing, according to ONS statistics, and now stands at
+                one every two days.
+            </p>
+            <br>
+            <p>
+                Recent data from the Office for National Statistics (ONS) shows that suicide rates among women under
+                the age of 25 in the UK are increasing and stand at one every two days. An ONS release says:
+                “Suicide rates among young females have been steadily increasing over several years. While
+                year-on-year changes might not be statistically significant, comparison between 2015 and 2021 shows
+                a statistically significant increase for those aged 10 to 24 and 25 to 44 years.”
+            </p>
+        </div>
+    </section>
+</main>
 {% endblock %}

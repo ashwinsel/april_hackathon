@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+
 {% block title %}Homepage{% endblock %}
 
 {% block content %}
@@ -7,7 +8,8 @@
 <section id="hero">
     <div id="hero-shadow">
     <div class="hero-content">
-        <h1>Welcome to ConnectHer</h1>
+        <h1>Welcome to <strong>ConnectHer</strong></h1>
+        <hr>
         <p><strong>find</strong> or <strong>give</strong> support <br> <strong>learn</strong> or <strong>share</strong></p>
         <a href="{% url 'learn' %}" class="cta-button"><h2>Connect**</h2></a>
     </div>
@@ -17,17 +19,17 @@
 
 <!-- Article Blocks -->
 <section id="articles">
-    <div class="article">
+    <div class="article keyfacts-left-inverted">
       
         <h2>Article 1 Headline</h2>
         <p>Article 1 description goes here.</p>
     </div>
-    <div class="article">
+    <div class="article keyfacts-right-inverted">
         
         <h2>Article 2 Headline</h2>
         <p>Article 2 description goes here.</p>
     </div>
-    <div class="article">
+    <div class="article keyfacts-left-inverted">
      
         <h2>Article 3 Headline</h2>
         <p>Article 3 description goes here.</p>

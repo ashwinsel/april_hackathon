@@ -96,16 +96,16 @@ main {
 }
 
 #hero {
-    margin-top: 30px;
-    height: 250px;
-    background: url('../assets/images/3women-1phone.jpg') no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    background: url('../assets/images/3women-1phone.webp') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     padding: 0px;
     background-color: #f0f0f0;
-    max-width: 90%;
+    /* max-width: 100%;*/
 }
 
 #hero-shadow {
@@ -119,14 +119,23 @@ main {
 }
 
 .hero-content {
-    padding: 20px;
+    /*padding: 20px;*/
+    background-color: rgb(226, 59, 95);
+    position: absolute;
+    transform: translate(0%, -45%);
+    bottom: 30px;
+    width: 60%;
+    height: 30%;
+    min-height: 10%;
+    padding: 40px 10px 20px 10px;
 }
 
 .hero-content h1 {
     font-size: 1.5em;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     color: var(--primary-color);
     font-weight: 300;
+    text-align: center;
 }
 
 .hero-content p {
@@ -134,7 +143,7 @@ main {
     letter-spacing: 0rem;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
-
+    text-align: center;
 }
 
 .hero-content a {
@@ -152,8 +161,9 @@ main {
     font-size: 40px;
     margin: 10px;
     border-radius: 5px;
-    position: absolute;
-    transform: translate(-55%, -33%);
+    position: relative;
+    /* position: absolute;*/
+    transform: translate(-5%, 19%);
 }
 
 .cta-button:hover {
@@ -178,10 +188,67 @@ main {
     margin: 10px;
 }
 
+.keyfacts-left-inverted {
+    width: 80%;
+    margin: 50px auto;
+    background:  rgb(243, 208, 215);
+    padding: 20px;
+    text-align: center;
+    font-size: 150%;
+    color:rgb(226, 59, 95);
+    font-family: arial;
+    position:relative;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 5px 8px 10px 0px rgb(54, 14, 23);
+}
+
+.keyfacts-left-inverted:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 12px solid  rgb(243, 208, 215);
+    border-top: 10px solid  rgb(243, 208, 215);
+    border-bottom: 10px solid transparent;
+    left: -20px;
+    top: 15px;
+}
+
+.keyfacts-right-inverted {
+    width: 80%;
+    margin: 50px auto;
+    background:  rgb(243, 208, 215);
+    padding: 20px;
+    text-align: center;
+    font-size:150%;
+    color:rgb(226, 59, 95);
+    font-family: arial;
+    position:relative; 
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 5px 8px 10px 0px rgb(54, 14, 23);
+}
+
+.keyfacts-right-inverted:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgb(243, 208, 215);
+    border-right: 12px solid  transparent;
+    border-top: 10px solid  rgb(243, 208, 215);
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 15px;
+}
+
 h1,
 h2 {
     color: #333;
 }
+
 /* end Stefan CSS */
 
 /* Footer Styles*/
@@ -279,11 +346,16 @@ footer div {
     }
 
     /*Stefan Styles*/
-    #hero {
+    /*#hero {
         height: 400px;
         width: 1000px;
         max-width: 80%;
-    }
+    }*/
+/*
+    .hero-content {
+        width: 60%;
+        height: 40%;
+    }*/
 
     .hero-content h1 {
         font-size: 2.5em;
@@ -293,7 +365,6 @@ footer div {
     }
 
     .hero-content p {
-
         font-size: 1.2em;
         letter-spacing: 0.2rem;
         color: rgb(255, 255, 255);
@@ -319,9 +390,10 @@ footer div {
 
 
 /*CENTRAL INFO PAGE----------------------------------------------------------------------------*/
-    h5.card-title, a.info-link{
-        color: #DE609F;
-    }
+h5.card-title,
+a.info-link {
+    color: #DE609F;
+}
 
 /*CONTACT PAGE----------------------------------------------------------------------------*/
 #contactus {
@@ -387,7 +459,8 @@ p.prof-socials {
     margin-bottom: 0;
 }
 
-.fa-brands, .fab {
+.fa-brands,
+.fab {
     font-weight: 400;
     color: #E55C70;
 }
