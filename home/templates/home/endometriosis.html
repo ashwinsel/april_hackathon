@@ -1,7 +1,150 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
-<!--code here :)-->
+<main class="info-page">
+    <h1>Endometriosis</h1>
+    <section>
+        <h2 class="hidden-words">Key Facts</h2>
+        <div class="keyfacts-flex">
+            <div class="keyfacts-left">
+                <p>"Endometriosis affects roughly 10% (<strong>190 million</strong>) of reproductive age women and
+                    girls
+                    globally."</p>
+            </div>
+            <div class="keyfacts-right">
+                <p>"It is a chronic disease associated with severe, life-impacting pain."</p>
+            </div>
+            <div class="keyfacts-left">
+                <p>"There is currently no known cure for endometriosis."</p>
+            </div>
+            <div class="keyfacts-right">
+                <p>"Access to early diagnosis and effective treatment of endometriosis is important, but is limited
+                    in
+                    many
+                    settings, including in low- and middle-income countries."</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="hidden-words">Overview</h2>
+        <div class="info-divs">
+            <h2>What is it?</h2>
+            <p>Endometriosis is a disease in which tissue similar to the lining of the uterus grows outside the
+                uterus.
+                It can cause severe pain in the pelvis and make it harder to get pregnant.
+            </p>
+            <br>
+            <p>
+                Endometriosis can start at a person's first menstrual period and last until menopause.
+            </p>
+            <br>
+            <p>
+                With endometriosis, tissue similar to the lining of the uterus grows outside the uterus. This leads
+                to
+                inflammation and scar tissue forming in the pelvic region and (rarely) elsewhere in the body.
+            </p>
+            <br>
+            <p>
+                There is no known way to prevent endometriosis. There is no cure, but its symptoms can be treated
+                with
+                medicines or, in some cases, surgery. It causes a chronic inflammatory reaction that may result in
+                the
+                formation of scar tissue (adhesions, fibrosis) within the pelvis and other parts of the body.
+                Several
+                lesion types have been described:
+                <br>
+            </p>
+            <ul class="info-list">
+                <li>superficial endometriosis found mainly on the pelvic peritoneum</li>
+                <li>cystic ovarian endometriosis (endometrioma) found in the ovaries</li>
+                <li>deep endometriosis found in the recto-vaginal septum, bladder, and bowel</li>
+                <li>in rare cases, endometriosis has also been found outside the pelvis.</li>
+            </ul>
+        </div>
+        <div class="info-divs">
+            <h2>Symptoms</h2>
+            <p>Endometriosis often causes severe pain in the pelvis, especially during menstrual periods. Some
+                people
+                also have pain during sex or when using the bathroom. Some people have trouble getting pregnant.
+            </p>
+            <br>
+            <p>
+                Some people with endometriosis don't have any symptoms. For those who do, a common symptom is pain
+                in
+                the lower part of the belly (pelvis). Pain may be most noticeable:
+            </p>
+            <ul class="info-list">
+                <li>during a period</li>
+                <li>during or after sex</li>
+                <li>when urinating or defecating</li>
+            </ul>
+            <br>
+            Some people also experience:
+            <ul class="info-list">
+                <li>chronic pelvic pain</li>
+                <li>heavy bleeding during periods or between periods</li>
+                <li>trouble getting pregnant</li>
+                <li>bloating or nausea</li>
+                <li>fatigue</li>
+                <li>depression or anxiety</li>
+            </ul>
+            <br>
+            <p>
+                Symptoms often improve after menopause, but not always.
+            </p>
+            <br>
+            <p>
+                Endometriosis symptoms are <strong>variable and broad</strong>, meaning that healthcare workers may
+                not
+                easily diagnose it. Individuals with symptoms may not be aware of the condition.
+            </p>
+        </div>
+        <div class="info-divs">
+            <h2>Treatment</h2>
+            <p>Treatments to manage endometriosis can vary based on the severity of symptoms and whether pregnancy
+                is
+                desired. No treatments cure the disease.
+                <br>
+                A range of medications can help manage endometriosis and its symptoms.
+                <br>
+                Non-steroidal anti-inflammatory drugs (NSAIDs) and analgesics (painkillers) like ibuprofen and
+                naproxen
+                are
+                often used to treat pain.
+                <br>
+                Hormonal medicines like GnRH-analogues and contraceptive (birth control) methods can also help
+                control
+                pain.
+                These methods include:
+            </p>
+            <ul class="info-list">
+                <li>pills</li>
+                <li>hormonal intrauterine devices (IUDs)</li>
+                <li>vaginal rings</li>
+                <li>implants</li>
+                <li>injections</li>
+                <li>patches</li>
+            </ul>
+            <p>
+                These methods may not be suitable for those wanting to get pregnant.
+                <br>
+                Fertility medicines and procedures are sometimes used for those having difficulty getting pregnant
+                because
+                of endometriosis.
+                <br>
+                Surgery is sometimes used to remove endometriosis lesions, adhesions and scar tissues. Laparoscopic
+                surgery
+                (using a small camera to visualize inside the body) allows doctors to keep incisions small.
+            </p>
+        </div>
+    </section>
+</main>
 {% endblock %}

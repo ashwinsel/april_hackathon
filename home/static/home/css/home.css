@@ -1,0 +1,123 @@
+/* General Styles */
+main {
+    padding: 3% 8%;
+    max-width: 100%;
+}
+
+.hidden-words {
+    display: none;
+}
+
+.info-page {
+    background: none;
+}
+
+.info-page h1 {
+    font-size: 300%;
+    text-align: center;
+    color: rgb(243, 208, 215);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration-line: overline underline;
+}
+
+
+.info-divs {
+    background-color: rgb(243, 208, 215);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    border: 3px solid rgb(226, 59, 95);
+}
+
+.info-list {
+    margin-left: 10%;
+}
+
+.keyfacts-left {
+    width: 80%;
+    margin: 50px auto;
+    background:  rgb(226, 59, 95);
+    padding: 20px;
+    text-align: center;
+    font-size: 150%;
+    color:#fff;
+    font-family: arial;
+    position:relative;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 5px 8px 10px 0px rgb(54, 14, 23);
+}
+
+.keyfacts-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 12px solid  rgb(226, 59, 95);
+    border-top: 10px solid  rgb(226, 59, 95);
+    border-bottom: 10px solid transparent;
+    left: -20px;
+    top: 15px;
+}
+
+.keyfacts-right {
+    width: 80%;
+    margin: 50px auto;
+    background:  rgb(226, 59, 95);
+    padding: 20px;
+    text-align: center;
+    font-size:150%;
+    color:#fff;
+    font-family: arial;
+    position:relative; 
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 5px 8px 10px 0px rgb(54, 14, 23);
+}
+
+.keyfacts-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgb(226, 59, 95);
+    border-right: 12px solid  transparent;
+    border-top: 10px solid  rgb(226, 59, 95);
+    border-bottom: 10px solid transparent;
+    right: -20px;
+    top: 15px;
+}
+
+/* Media query: ipads and tablets (481px and up)*/
+@media screen and (min-width: 481px) {
+    .info-page h1 {
+        font-size: 400%;
+    }
+}
+
+/* Media query: landscape phones and small screen laptops (768px and up)*/
+@media screen and (min-width: 768px) {
+    .info-page h1 {
+        font-size: 500%;
+    }
+
+   .keyfacts-left {
+    left: 0;
+    margin-left: 0;
+   }
+
+   .keyfacts-right {
+    right: 0;
+    margin-right: 0;
+   }
+
+}
+
+/* Media query: larger screens (992px and up)*/
+@media screen and (min-width: 992px) {
+    .info-page h1 {
+        font-size: 600%;
+    }
+}
