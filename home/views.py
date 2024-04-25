@@ -7,6 +7,9 @@ def home(request):
 def contact(request):
     return render(request, 'home/contact.html')
 
+def contactConfirmation(request):
+    return render(request, 'home/contact_confirmation.html')
+
 def aboutUs(request):
     return render(request, 'home/about_us.html')
 
