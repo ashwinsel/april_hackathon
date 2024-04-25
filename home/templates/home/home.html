@@ -6,33 +6,32 @@
 {% block content %}
 <!-- Hero Section -->
 <section id="hero">
-    <div id="hero-shadow">
     <div class="hero-content">
         <h1>Welcome to <strong>ConnectHer</strong></h1>
         <hr>
-        <p><strong>find</strong> or <strong>give</strong> support <br> <strong>learn</strong> or <strong>share</strong></p>
-        <a href="{% url 'learn' %}" class="cta-button"><h2>Connect**</h2></a>
+        <p><strong>find</strong> or <strong>give</strong> support <br> <strong>learn</strong> or
+            <strong>share</strong>
+        </p>
+        <div id="cta-dive">
+            <a href="{% url 'category_list' %}" class="cta-button">
+                <h2>Connect</h2>
+            </a>
+        </div>
     </div>
-    </div>
-   
 </section>
 
 <!-- Article Blocks -->
 <section id="articles">
     <div class="article keyfacts-left-inverted">
-      
-        <h2>Article 1 Headline</h2>
-        <p>Article 1 description goes here.</p>
+        <h6>"Great platform for engaging discussions! Love the diverse topics and supportive community. Easy to navigate
+            and share insights. Highly recommended!" - Beyoncay</h6>
     </div>
     <div class="article keyfacts-right-inverted">
-        
-        <h2>Article 2 Headline</h2>
-        <p>Article 2 description goes here.</p>
+        <h6>"It is a chronic disease associated with severe, life-impacting pain." - Taylor Slow</h6>
     </div>
     <div class="article keyfacts-left-inverted">
-     
-        <h2>Article 3 Headline</h2>
-        <p>Article 3 description goes here.</p>
+        <h6>"I've learned so much from the educational materials on this forum. From informative articles to practical
+            tips, they've helped me better understand my symptoms." - Megan Wolf</h6>
     </div>
 </section>
 {% endblock %}

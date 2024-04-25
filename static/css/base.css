@@ -27,19 +27,25 @@ header {
     justify-content: space-between;
     align-items: baseline;
     border-radius: 0;
+    letter-spacing: 0.1rem;
     /* stefan edit */
     top: 0;
 }
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #333;
 }
 
 #nav-menu2 {
     font-size: 120%;
     list-style-type: none;
     letter-spacing: 1px;
+}
+
+#nav-menu2 a {
+    text-decoration: none;
+    color:#333
 }
 
 /* Navbar styles with dropdown toggle */
@@ -96,42 +102,26 @@ main {
 }
 
 #hero {
-    height: 600px;
+    height: 650px;
     width: 100%;
     background: url('../assets/images/3women-1phone.webp') no-repeat center center/cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
     padding: 0px;
     background-color: #f0f0f0;
-    /* max-width: 100%;*/
-}
-
-#hero-shadow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    width: 100%;
 }
 
 .hero-content {
-    /*padding: 20px;*/
     background-color: rgb(226, 59, 95);
-    position: absolute;
-    transform: translate(0%, -45%);
-    bottom: 30px;
-    width: 60%;
-    height: 30%;
-    min-height: 10%;
+    margin: 40% 10% 5% 10%;
     padding: 40px 10px 20px 10px;
+    position: absolute;
 }
 
 .hero-content h1 {
-    font-size: 1.5em;
+    font-size: 180%;
     letter-spacing: 0.1rem;
     color: var(--primary-color);
     font-weight: 300;
@@ -139,8 +129,7 @@ main {
 }
 
 .hero-content p {
-    font-size: 0.8rem;
-    letter-spacing: 0rem;
+    font-size: 110%;
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
     text-align: center;
@@ -148,6 +137,12 @@ main {
 
 .hero-content a {
     text-decoration: none;
+}
+
+#cta-dive {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-button {
@@ -161,9 +156,6 @@ main {
     font-size: 40px;
     margin: 10px;
     border-radius: 5px;
-    position: relative;
-    /* position: absolute;*/
-    transform: translate(-5%, 19%);
 }
 
 .cta-button:hover {
@@ -190,7 +182,7 @@ main {
 
 .keyfacts-left-inverted {
     width: 80%;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
     background:  rgb(243, 208, 215);
     padding: 20px;
     text-align: center;
@@ -255,14 +247,14 @@ h2 {
 footer {
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
-    padding: 2%;
+    /*padding: 2%;*/
     background-color: #F3D0D7;
     border-radius: 0px;
     margin-top: auto;
 }
 
 footer div {
-    padding: 2% 2%;
+    padding-top: 2%;
 }
 
 #socialmedia-icons {
@@ -345,48 +337,24 @@ footer div {
         display: none;
     }
 
-    /*Stefan Styles*/
-    /*#hero {
-        height: 400px;
-        width: 1000px;
-        max-width: 80%;
-    }*/
-/*
     .hero-content {
-        width: 60%;
-        height: 40%;
-    }*/
+        margin-bottom: 5%;
+    }
 
     .hero-content h1 {
-        font-size: 2.5em;
-        letter-spacing: 0.6rem;
-        color: var(--primary-color);
+        font-size: 200%;
+        letter-spacing: 0.2rem;
         font-weight: 300;
     }
 
     .hero-content p {
-        font-size: 1.2em;
-        letter-spacing: 0.2rem;
-        color: rgb(255, 255, 255);
-        margin-bottom: 20px;
-
-    }
-
-    .cta-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: var(--primary-color);
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        border-radius: 5px;
+        font-size: 120%;
     }
 
     #articles {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* end Stefan CSS */
 
 
 /*CENTRAL INFO PAGE----------------------------------------------------------------------------*/
