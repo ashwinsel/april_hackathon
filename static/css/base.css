@@ -37,6 +37,10 @@ header a {
     color: #333;
 }
 
+h1#logo {
+    text-decoration: none;
+}
+
 #nav-menu2 {
     font-size: 120%;
     list-style-type: none;
@@ -114,7 +118,7 @@ main {
 }
 
 .hero-content {
-    background-color: rgb(226, 59, 95);
+    background-color: rgba(226, 59, 95, 0.7);
     margin: 40% 10% 5% 10%;
     padding: 40px 10px 20px 10px;
     position: absolute;
