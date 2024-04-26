@@ -5,17 +5,17 @@
 {% block content %}
 
     <div id="contactus">
-        <form action="#" method="GET" target="_blank">
+        <form action="{% url 'contact_confirmation' %}" method="GET" target="_blank">
             <label for="name" class="contactlabel">Your name</label>
-            <input type="text" name="name" class="contactbox" id="name" required>
+            <input type="text" name="name" class="contactbox" id="name" placeholder="Jane Doe" required>
             <br>
 
             <label for="email" class="contactlabel">Your email</label>
-            <input type="email" name="emailaddress" class="contactbox" id="email" required>
+            <input type="email" name="emailaddress" class="contactbox" id="email" placeholder="janedoe@gmail.com" required>
             <br>
 
             <label for="contactbox-query" class="contactlabel">Your query</label>
-            <textarea rows="10" name="query" class="contactbox" id="contactbox-query" required></textarea>
+            <textarea rows="10" name="query" class="contactbox" id="contactbox-query" placeholder="Hi ConnectHer, my query is..." required></textarea>
             <br>
 
             <button type="submit" id="contactbox-submit"
