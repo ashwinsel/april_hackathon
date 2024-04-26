@@ -295,6 +295,23 @@ footer div {
     border-radius: 10px;
 }
 
+/* Contact Confirmation page styling*/
+
+div.card.about-card.cc-card {
+    text-align: center;
+    display:flex;
+    background-color: rgb(243, 208, 215);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    border: 3px solid rgb(226, 59, 95);
+}
+
+h4.card-title.cc-card1 {
+    color:rgb(0, 0, 0);
+}
+
+
 #socialmedia-icons a:hover,
 #footer-email a:hover {
     background-color: #F3D0D7;

@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
@@ -9,7 +11,7 @@
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <a href="{% url 'endometriosis' %}"><img src="../static/assets/images/endo.png" class="card-img-top" alt="photo of female reproductive system with endometriosis" aria-label="photo of female reproductive system with endometriosis"></a>
+                <a href="{% url 'endometriosis' %}"><img src="{% static 'assets/images/endo.png' %}" class="card-img-top" alt="photo of female reproductive system with endometriosis"></a>
                 <div class="card-body">
                 <h5 class="card-title"><a href="{% url 'endometriosis' %}" class="info-link">ENDOMETRIOSIS</a></h5>  
                 </div>
@@ -17,7 +19,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <a href="{% url 'menopause' %}"><img src="../static/assets/images/meno.png" class="card-img-top" alt="photo of older woman in a field" aria-label="photo of older woman in a field"></a>
+                <a href="{% url 'menopause' %}"><img src="{% static 'assets/images/meno.png' %}" class="card-img-top" alt="photo of older woman in a field"></a>
                 <div class="card-body">
                 <h5 class="card-title"><a href="{% url 'menopause' %}" class="info-link">MENOPAUSE</a></h5> 
                 </div>
@@ -25,7 +27,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <a href=" {% url 'Not being heard' %}"><img src="../static/assets/images/heard.png" class="card-img-top" alt="female patient speaking to female doctor" aria-label="female patient speaking to female doctor"></a>
+                <a href=" {% url 'Not being heard' %}"><img src="{% static 'assets/images/heard.png' %}" class="card-img-top" alt="female patient speaking to female doctor"></a>
                 <div class="card-body">
                 <h5 class="card-title"><a href=" {% url 'Not being heard' %}" class="info-link">NOT FEELING HEARD</a></h5> 
                 </div>
@@ -33,7 +35,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <img src="../static/assets/images/coming-soon.png" class="card-img-top" alt="COMING SOON sign" aria-label="COMING SOON sign">
+                <img src="{% static 'assets/images/coming-soon.png' %}" class="card-img-top" alt="COMING SOON sign">
                 <div class="card-body">
                 <h5 class="card-title">PAP SMEARS</h5> 
                 </div>
@@ -41,7 +43,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <img src="../static/assets/images/coming-soon.png" class="card-img-top" alt="COMING SOON sign" aria-label="COMING SOON sign">
+                <img src="{% static 'assets/images/coming-soon.png' %}" class="card-img-top" alt="COMING SOON sign">
                 <div class="card-body">
                 <h5 class="card-title">DOMESTIC VIOLENCE</h5> 
                 </div>
@@ -49,7 +51,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 p-3">
             <div class="card info-card">
-                <img src="../static/assets/images/coming-soon.png" class="card-img-top" alt="COMING SOON sign" aria-label="COMING SOON sign">
+                <img src="{% static 'assets/images/coming-soon.png' %}" class="card-img-top" alt="COMING SOON sign">
                 <div class="card-body">
                 <h5 class="card-title">MENSTRUAL CYCLE</h5> 
                 </div>
