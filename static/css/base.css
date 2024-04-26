@@ -37,6 +37,10 @@ header a {
     color: #333;
 }
 
+h1#logo {
+    text-decoration: none;
+}
+
 #nav-menu2 {
     font-size: 120%;
     list-style-type: none;
@@ -114,7 +118,7 @@ main {
 }
 
 .hero-content {
-    background-color: rgb(226, 59, 95);
+    background-color: rgba(226, 59, 95, 0.7);
     margin: 40% 10% 5% 10%;
     padding: 40px 10px 20px 10px;
     position: absolute;
@@ -385,6 +389,11 @@ a.info-link {
     display: flex;
     top: 0;
     margin-left: 8%;
+    padding: 5% 5%;
+    background-color: rgb(243, 208, 215);
+    margin: 10%;
+    border-radius: 10px;
+    border: 3px solid rgb(226, 59, 95);
 }
 
 .contactbox {
@@ -401,12 +410,23 @@ label.contactlabel {
 }
 
 button#contactbox-submit {
-    /*background-color: ; 
-    color: ;
-    font-family: ; */
     margin: 10px;
     font-weight: 300;
     font-size: 120%;
+    transition-duration: 0.4s;
+    background-color: var(--primary-color);
+    border: 2px solid rgb(226, 59, 95);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+button#contactbox-submit:hover {
+    background-color: rgb(226, 59, 95);
+    border: 2px solid var(--primary-color);
+    color: white;
 }
 
 textarea {
